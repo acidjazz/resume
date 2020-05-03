@@ -92,4 +92,5 @@ sw.*
 # mdi
 static/mdi.css
 static/materialdesignicons.min.css.map
+static/materialdesignicons.css.map
 static/fonts/material*
