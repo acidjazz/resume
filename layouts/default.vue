@@ -1,3 +1,4 @@
 <template lang="pug">
-  nuxt.bg-gray-900
+  .min-h-screen(:class="`${$store.state.mode}-mode`")
+    nuxt
 </template>

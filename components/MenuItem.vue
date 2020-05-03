@@ -7,7 +7,7 @@
 
 <style lang="stylus">
   .hover-expand
-    width 0%
+    width 0
     transition width 0.2s ease-in-out
   .hover-expand:hover
     width 100%
