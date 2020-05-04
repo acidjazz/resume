@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "kevin scott olson junior",
   "author": "kevin olson",
+  "license": "MIT",
   "private": false,
   "scripts": {
     "dev": "nuxt",

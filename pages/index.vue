@@ -6,18 +6,18 @@
           img(src="avatar1.jpeg")
         .font-bold.py-2.px-6.text-lg kevin olson
       .flex
-        .mx-2.py-2.px-6.relative.w-24
-          MenuItem(name="item 1")
-        .mx-2.py-2.px-6
-          span item 2
-        .mx-2.py-2.px-6
-          span item 3
-        .mx-2.px-2.flex.items-center.cursor-pointer.hover_bg-blue-100.tran-background.hover_text-gray-900(@click="mode()")
-          i.mdi.mdi-24px.mdi-brightness-4
-
+        .mx-2
+          MenuItem(icon="github", to="https://github.com/acidjazz")
+        .mx-2
+          MenuItem(icon="email", to="mailto:acidjazz@gmail.com")
+        .mx-2
+          MenuItem(icon="phone", to="tel:19492908989")
+        .mx-2
+          MenuItem(icon="download", to="/resume.pdf")
+        .mx-2
+          MenuItem(icon="brightness-4", type="click", :to="mode")
     .text-4xl.my-12
-      p Hello, I'm Kevin Olson
-      p I'm a Full Stack and DevOps engineer.
+      p Hello, I'm Kevin Olson, a Full Stack and DevOps engineer.
 
     .mb-8.text-2xl Technology I love
     .flex

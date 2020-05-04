@@ -1,26 +1,33 @@
 <template lang="pug">
-.cursor-pointer
-  .absolute.inset-0.bg-orange-600.hover-expand
-  .absolute.inset-0.bg-blue-400.flex.items-center.justify-center
-    span {{ name }}
+.bg-blue-600.hover_bg-blue-400.tran-background.rounded-full.text-white.cursor-pointer
+  a.w-10.h-10.flex.items-center.justify-center(v-if="is_link", :href="to")
+    i.mdi.mdi-18px(:class="`mdi-${icon}`")
+  .w-10.h-10.flex.items-center.justify-center(v-else, @click="to")
+    i.mdi.mdi-18px(:class="`mdi-${icon}`")
 </template>
-
-<style lang="stylus">
-  .hover-expand
-    width 0
-    transition width 0.2s ease-in-out
-  .hover-expand:hover
-    width 100%
-</style>
 
 <script>
 export default {
-  name: 'MenuItem',
   props: {
-    name: {
+    type: {
+      type: String,
+      required: false,
+      default: 'link',
+    },
+    icon: {
       type: String,
       required: true,
-      description: 'Menu item name',
+    },
+    to: {
+      type: [Boolean, String, Function],
+      required: false,
+      default: false,
+    }
+  },
+
+  computed: {
+    is_link () {
+      return this.type === 'link'
     }
   }
 }
