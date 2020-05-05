@@ -1,21 +1,33 @@
 html
   font-family Roboto
 
+a
+  @apply pl-1
+
  .light-mode, .dark-mode
    transition all 0.3s ease-in-out
+
  .light-mode
    @apply bg-white text-gray-900
+   a
+     @apply text-blue-600
+
  .dark-mode
    @apply bg-gray-900 text-white
+   .tech-block
+      @apply bg-white
+   a
+     @apply text-blue-300
 
  .grayscale-hover
-   filter: grayscale(100%)
-   transition filter 0.3s ease-in-out
-   &:hover
-    filter: grayscale(0%)
+    img
+      filter: grayscale(100%)
+      transition filter 0.3s ease-in-out
+    &:hover img
+      filter: grayscale(0%)
 
  .tech-block
-   @apply flex mr-8 p-4 bg-white rounded border border-gray-200 grayscale-hover
+   @apply flex mr-8 p-4 rounded border border-gray-200
 
 .tran-background
   transition background-color 0.1s ease-in-out

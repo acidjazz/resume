@@ -17,8 +17,7 @@
         .mx-2
           MenuItem(icon="brightness-4", type="click", :to="mode")
     .text-4xl.my-12
-      p Hello, I'm Kevin Olson, a Full Stack and DevOps engineer.
-
+      p Hi, I'm Kevin Olson, a Full Stack and DevOps engineer.
     .mb-8.text-2xl Technology I love
     .flex
       a.tech-block.h-20.hover_shadow.grayscale-hover(href="https://laravel.com", target="_new")
@@ -28,52 +27,60 @@
         img(src="/vuejs.png").h-full
       a.tech-block.h-20.hover_shadow.grayscale-hover(href="https://aws.amazon.com", target="_new")
         img(src="/aws.png").h-full
-      a.tech-block.h-20.w-22.shover_shadow.grayscale-hover(href="https://nuxtjs.org", target="_new")
-        img(src="/nuxtjs.png").h-full
+      a.tech-block.h-20.w-22.hover_shadow.grayscale-hover(href="https://nuxtjs.org", target="_new")
+        img(src="/nuxtjs.svg").h-full
 
     .mt-8.mb-4.text-2xl Experience
-    //.text-m
-      p   Sept `14 - Current
-        span &nbsp;
-        b 256 llc
-      p   Please refer to &nbsp;
-        a.text-blue-400(href="https://256.io", target="_new") 256.io
-      p   Sept `13 - Sept `14Rosetta
-      p   Built an Android App for Samsung at SXSW featured on the Cover of Forbes Magazine
-      p   Used NFC and geofencing to help guide people on a curated treasure hunt around the convention grounds
-      p   Various prizes unlocked at select vendors using NFC and tracking progress
-      p   Many other various apps / microsites / SPA's ( most under strict NDA )
-      p   Sept `10 - Nov `12isobar
-      p   Multiple apps and sites for Dolby to help promote their new Dolby Atmos technology, and also a project with Adam West
-      p   Various projects for Adidas to help promote the 2010 World Cup involving Dwight Howard and Dale Earnhardt Jr.
-      p   A Facebook app for Kohler similar to "elf yourself" to embed custom content in rendered video
-      p   Many other Facebook apps, SPA's, mobile apps, micro-sites, and some native iOS and Android apps.
-      p   Sept `08 - Sept `10K-Factor Media / Facebook
-      p   Built several games on facebook, some full stack and some w/ a flash developer for the front end
-      p   Aug `08 - Sept `09FanIQ
-      p   Researched and implemented a STATS provider to harness live stats and updates of all the major sports
-      p   Created a custom interactive advertisement widget to sell merchandise introducing their first line of revenue
-      p   Implemented an entire back end in-house reporting structure to locally track impressions/clicks/conversion of all merchandise and later tickets to games.
-      p   Solely wrote a "quick" sports fantasy game from scratch that allows you to bet virtual currency and play for the span of one day to a week at a time
-      p   Wrote and maintained multiple Facebook games from scratch (FBG)
-      p   Interfaces to measure Facebook game metrics and view reports of traffic sources / play paths (FBG)
-      p   Nov `07 - July `08Eight Days Inc (Hot or Not)
-      p   Re-wrote the virtual gifts section to include gifts outside of flowers, w/ back-end interfaces to add/remove/change gifts
-      p   Re-wrote the gift purchasing system to allow multiple gifts/bundles to be purchased at once
-      p   Implemented a chat system including a bottom chat bar and friends list allowing multiple chats at once (using comet programming)
-      p   Numerous performance tweaks/improvements
-      p   Sept `06 - Oct `07Vinyl Interactive
-      p   Focused on methodology to increase conversation rates from numerous validity checks to User Interface tweaks
-      p   Wrote a feature-rich publisher interface including the following
-      p   Reporting with graphing by Actions, EPC, CTC, and Detailed, allowing you to save custom compiled reports and label them.
-      p   Customizable summary page where you can choose the type of reports you want to see, allowing any amount.
-      p   Wrote a series of algorithms to help decide a suitable path of offers based on mining historic data, being specific from particular offer history to the time of day
-      p   Compiled a demographic engine and interface causing effection to the offer path based on characteristics like sex, age, and education
-      p   April `05 - Sept `06Finance Express / escrow.com
-      p   Wrote specs and xml daemons/parsers for every major section for partners, lenders, and dealerships to interact with the interface automatically
-      p   Re-wrote and added to most of the major sections of the interface, integrating xmlhttp and other javascript/dhtml to ease and improve navigation
-      p   Converted alot of older sections to more optimized code, removing all found deprecated procedures. Templatizing the look and feel and moving functionality into OO style code, making it easy to plug in XML functionality to most of the major sections
-      p   Wrote an account management system for Customer Service to help sign up, modify, and remove new clients with alot of trouble shooting utilities
+    BlockExperience(company="256 llc", title="Software Engineer", range="Sept 2014 - Now", location="San Francisco, CA - Austin, TX", link="https://256.io")
+      p Latest projects including
+      ul.list-disc.ml-8
+        li
+          a(href="https://weareapartments.org/", target="_new") We Are Apartments
+          span.pl-1 -
+          a(href="https://github.com/acidjazz/waa", target="_new") code
+        li
+          a(href="https://oneconcern.com/", target="_new") One Concern
+          span.pl-1 -
+          a(href="https://github.com/acidjazz/waa", target="_new") code
+        li
+          span.pl-1 Visit the portfolio site for more projects with source code at
+          a(href="https://256.io/", target="_new") 256.io
+
+    BlockExperience(company="Rosetta", title="Software Engineer", range="Sept 2013 - Sept 2014", location="San Francisco, CA", link="https://rosetta.com/")
+      ul.list-disc.ml-8
+        li Built an Android App for Samsung at SXSW featured on the Cover of Forbes Magazine
+        li Used NFC and geofencing to help guide people on a curated treasure hunt around the convention grounds
+        li Various prizes unlocked at select vendors using NFC and tracking progress
+        li Many other various apps / microsites / SPA's ( most under strict NDA )
+    BlockExperience(company="Isobar", title="Software Engineer", range="Sept 2008 - Nov 2012", location="San Francisco, CA", link="https://isobar.com/")
+      ul.list-disc.ml-8
+        li   Multiple apps and sites for Dolby to help promote their new Dolby Atmos technology, and also a project with Adam West
+        li   Various projects for Adidas to help promote the 2010 World Cup involving Dwight Howard and Dale Earnhardt Jr.
+        li   A Facebook app for Kohler similar to "elf yourself" to embed custom content in rendered video
+        li   Many other Facebook apps, SPA's, mobile apps, micro-sites, and some native iOS and Android apps.
+    BlockExperience(company="FanIQ", title="Software Engineer", range="Aug 2008 - Sept 2009", location="San Francisco, CA", link="https://www.crunchbase.com/organization/faniq")
+      ul.list-disc.ml-8
+        li Researched and implemented a STATS provider to harness live stats and updates of all the major sports
+        li Created a custom interactive advertisement widget to sell merchandise introducing their first line of revenue
+        li Implemented an entire back end in-house reporting structure to locally track impressions/clicks/conversion of all merchandise and later tickets to games.
+        li Solely wrote a "quick" sports fantasy game from scratch that allows you to bet virtual currency and play for the span of one day to a week at a time
+        li Wrote and maintained multiple Facebook games from scratch (FBG)
+        li Interfaces to measure Facebook game metrics and view reports of traffic sources / play paths (FBG)
+    BlockExperience(company="Vinyl Interactive", title="Software Engineer", range="Sept 2006 - Aug 2009", location="San Francisco, CA", link="http://vinylinteractive.com/")
+      ul.list-disc.ml-8
+        li Focused on methodology to increase conversation rates from numerous validity checks to User Interface tweaks
+        li Wrote a feature-rich publisher interface including the following
+        li Reporting with graphing by Actions, EPC, CTC, and Detailed, allowing you to save custom compiled reports and label them.
+        li Customizable summary page where you can choose the type of reports you want to see, allowing any amount.
+        li Wrote a series of algorithms to help decide a suitable path of offers based on mining historic data, being specific from particular offer history to the time of day
+        li Compiled a demographic engine and interface causing effect to the offer path based on characteristics like sex, age, and education
+    BlockExperience(company="Escrow.com", title="Software Engineer", range="Sept 2006 - Aug 2009", location="San Francisco, CA", link="https://escrow.com/")
+      ul.list-disc.ml-8
+        li Wrote specs and xml daemons/parsers for every major section for partners, lenders, and dealerships to interact with the interface automatically
+        li Re-wrote and added to most of the major sections of the interface, integrating xmlhttp and other javascript/dhtml to ease and improve navigation
+        li Converted alot of older sections to more optimized code, removing all found deprecated procedures. Templatizing the look and feel and moving functionality into OO style code, making it easy to plug in XML functionality to most of the major sections
+        li Wrote an account management system for Customer Service to help sign up, modify, and remove new clients with alot of trouble shooting utilities
+    //
       p   March `04 - April `05University of Southern California
       p   Contract involving the improvement and re-writing of the ISD (Information Services Division)
       p   Interfaces for teachers to help easier manage students taking courses online
@@ -100,8 +107,9 @@
 
 <script>
 import MenuItem from '@/components/MenuItem'
+import BlockExperience from '@/components/BlockExperience'
 export default {
-  components: { MenuItem },
+  components: { MenuItem, BlockExperience },
   methods: {
     mode() {
       const mode = this.$store.state.mode === 'light' ? 'dark' : 'light'
