@@ -1,15 +1,17 @@
 <template lang="pug">
-.BlockExperience.mb-8
-  .flex.flex-row.justify-start
-    .title
-      a(:href="link", target="_new").pl-0 {{ company }}
-      span.px-1 -
+.BlockExperience
+  .flex.flex-row.justify-start(@click="details = !details")
+    a(:href="link", target="_new").pl-0 {{ company }}
+    .flex.cursor-pointer
+      span.px-2 -
       span.text-sm {{ title }}
-      .text-sm.text-gray-600.pb-2 {{ location }}
-    .flex.flex-row.ml-6.text-sm
-      i.mdi.mdi-calendar.mr-2
-      p  {{ range }}
-  slot
+      span.px-2 -
+      span.text-gray-500.text-sm {{ location }}
+      span.px-2 -
+      i.mdi.mdi-calendar.pr-2
+      span.text-sm  {{ range }}
+      i.mdi.mdi-chevron-down.pl-2
+  slot(v-if="details")
 </template>
 
 <script>
@@ -35,6 +37,11 @@ export default {
       type: String,
       required: true,
     },
-  }
+  },
+  data () {
+    return {
+      details: false,
+    }
+  },
 }
 </script>
