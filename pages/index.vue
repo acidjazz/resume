@@ -1,5 +1,5 @@
 <template lang="pug">
-.container.md.p-4
+.container.md.px-4
   .flex.justify-between.py-6
     .flex
       .avatar.w-10.h-10.rounded-full.overflow-hidden.mr-2
@@ -16,7 +16,7 @@
     .text-lg Full stack and DevOps engineer
 
   PageSection(title="Technology I Love")
-    .flex
+    .flex.flex-wrap
       BlockTechnology(src="laravel.svg", to="https://laravel.com")
       BlockTechnology(src="vuejs.png", to="https://vuejs.org")
       BlockTechnology(src="aws.png", to="https://aws.amazon.com")
@@ -99,7 +99,7 @@
         li Installed Cisco routers and Bay Networks Hubs to all of the high schools of the Santa Ana School District
         li Routing and testing cat5 and fiber optic cables from each classroom to the main router
 
-  a.my-10.flex.flex-row.items-center.justify-end(href="https://github.com/acidjazz/resume", target="_new")
+  a.mt-10.flex.flex-row.items-center.justify-end(href="https://github.com/acidjazz/resume", target="_new")
     i.mdi.mdi-code-braces.mr-1
     i.mdi.mdi-heart.text-red-400.mr-1
     i.mdi.mdi-vuejs.text-green-400.mr-1
