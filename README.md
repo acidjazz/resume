@@ -11,6 +11,12 @@
  <img src="https://github.com/acidjazz/resume/raw/master/filtering.gif" alt="Image Filtering"/>
 </p>
 
+> Lighthouse Score
+
+<p align="center">
+ <img src="https://github.com/acidjazz/resume/raw/master/lighthouse.png" alt="Lighthouse Score"/>
+</p>
+
 
 ## Build Setup
 
