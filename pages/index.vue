@@ -6,6 +6,7 @@
         img(:src="`avatar-${$store.state.mode}.jpeg`")
     .flex.pri
       MenuItem(icon="brightness-4", type="click", :to="mode").print_hidden
+      MenuItem(icon="link", label="256.io", to="https://256.io")
       MenuItem(icon="github", label="github.com/acidjazz", to="https://github.com/acidjazz")
       MenuItem(icon="email", label="acidjazz@gmail.com", to="mailto:acidjazz@gmail.com")
       MenuItem(icon="phone", label="9492908989", to="tel:19492908989")
