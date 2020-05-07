@@ -2,7 +2,7 @@
 .mb-2.print_mb-0
   .flex.flex-col.lg_flex-row.print_flex-row.justify-start.cursor-pointer(@click="details = !details")
     .flex.items-center
-      a(:href="link", target="_new").text-lg.pl-0 {{ company }}
+      span {{ company }}
       .px-2 -
       .text-sm {{ title }}
     .flex.items-center
@@ -10,6 +10,8 @@
       .text-gray-500.text-sm {{ location }}
       i.mdi.mdi-calendar.px-2
       .text-gray-500.text-sm  {{ range }}
+      a(:href="link", target="_blank")
+        i.mdi.pl-2.mdi-link
       i.mdi.pl-2(:class="chevron")
   slot(v-if="details")
 </template>
