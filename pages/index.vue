@@ -9,7 +9,7 @@
       MenuItem(icon="github", label="github.com/acidjazz", to="https://github.com/acidjazz")
       MenuItem(icon="email", label="acidjazz@gmail.com", to="mailto:acidjazz@gmail.com")
       MenuItem(icon="phone", label="9492908989", to="tel:19492908989")
-      MenuItem(icon="file-pdf", to="/resume.pdf").print_hidden
+      MenuItem(icon="file-pdf", to="/kevin-olson-resume.pdf").print_hidden
 
   .text-2xl Kevin Olson
   PageSection(title="Profile")
@@ -24,7 +24,7 @@
       BlockTechnology(src="tailwind.png", to="https://tailwindcss.com")
       BlockTechnology(src="lottie.png", to="https://airbnb.design/lottie/")
     .flex.flex-wrap
-      .tag.py-1.px-4.mr-4.mb-4.print_p-1.print_mr-1.print_mb-1(v-for="skill in skills_array") {{ skill }}
+      .tag.py-1.px-4.mr-4.mb-4.print_px-1.print_mr-1.print_mb-1(v-for="skill in skills_array") {{ skill }}
 
   PageSection(title="Experience")
     BlockExperience(company="256 llc", title="Software Engineer", range="Sept 2014 - Now", location="Austin, TX", link="https://256.io")
