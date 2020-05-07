@@ -5,6 +5,14 @@
 ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
 */
 module.exports = {
+  purge: {
+    enabled: process.env.NODE_ENV === 'production',
+    content: [
+      'layouts/**/*.vue',
+      'pages/**/*.vue',
+      'components/**/*.vue',
+    ]
+  },
   separator: '_',
   division: '_',
   theme: {
@@ -45,10 +53,10 @@ module.exports = {
         '11_12': '91.666667%',
       },
       height: {
-        '96': '24rem',
-        '128': '32rem',
-        '192': '48rem',
-        '256': '64rem',
+        96: '24rem',
+        128: '32rem',
+        192: '48rem',
+        256: '64rem',
       },
     },
   },
