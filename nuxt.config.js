@@ -15,9 +15,10 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
+      { rel: 'manifest', href: '/site.webmanifest' },
       { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/light/favicon-32x32.png' },
       { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/light/favicon-16x16.png' },
-      { rel: 'preload', href: '/fonts/materialdesignicons-webfont.eot?v-5.1.45', as: 'font' },
+      { rel: 'font', href: '/fonts/materialdesignicons-webfont.eot?v-5.1.45' },
       { rel: 'stylesheet', href: '/mdi.css' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap' },
     ]
@@ -51,7 +52,7 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/tailwindcss',
     '@nuxtjs/axios',
-    '@nuxtjs/pwa'
+    [ '@nuxtjs/pwa', { manifest: false}],
   ],
   /*
   ** Axios module configuration

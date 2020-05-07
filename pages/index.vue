@@ -1,17 +1,16 @@
 <template lang="pug">
-.container.md.px-4.pb-6
+main.container.md.px-4.pb-6
   .flex.justify-between.py-6
     .flex
       .avatar.w-10.h-10.rounded-full.overflow-hidden.mr-2
-        img(:src="`avatar-${$store.state.mode}.jpeg`")
-    .flex.pri
+        img(:src="`avatar-${$store.state.mode}.jpeg`", alt="Avatar")
+    .flex
       MenuItem(icon="brightness-4", type="click", :to="mode").print_hidden
       MenuItem(icon="link", label="256.io", to="https://256.io")
       MenuItem(icon="github", label="github.com/acidjazz", to="https://github.com/acidjazz")
       MenuItem(icon="email", label="acidjazz@gmail.com", to="mailto:acidjazz@gmail.com")
       MenuItem(icon="phone", label="9492908989", to="tel:19492908989")
       MenuItem(icon="file-pdf", to="/kevin-olson-resume.pdf").print_hidden
-
   .text-2xl Kevin Olson
   PageSection(title="Profile")
     .text-lg Full stack and DevOps engineer

@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "kevin olson resume",
+    "short_name": "kevinolson",
     "icons": [
         {
             "src": "/light/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
+    "theme_color": "#1b202c",
+    "background_color": "#f7fafc",
     "display": "standalone"
 }
