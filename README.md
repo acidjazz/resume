@@ -1,6 +1,6 @@
-# resume
+# the resume of kevin olson
 
-> kevin olson 
+> now with dark mode
 
 
 [![aeonian status](https://img.shields.io/badge/%C3%A6onian-deployed-green.svg)](https://github.com/acidjazz/aeonian)
