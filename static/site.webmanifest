@@ -1,6 +1,7 @@
 {
     "name": "kevin olson resume",
     "short_name": "kevinolson",
+    "start_url": "https://kevinolson.org",
     "icons": [
         {
             "src": "/light/android-chrome-192x192.png",

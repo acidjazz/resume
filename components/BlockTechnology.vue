@@ -4,7 +4,7 @@ a.tech-block.h-12.lg_h-20.p-2.lg_p-4.grayscale-hover.shadow-hover(
   target="_new",
   :alt="alt",
   :class="cls")
-  img(:src="`/${src}`").h-full
+  img(:src="`/${src}`", :alt="alt").h-full
 </template>
 
 <script>
