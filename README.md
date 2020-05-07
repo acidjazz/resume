@@ -5,6 +5,7 @@
 
 [![aeonian status](https://img.shields.io/badge/%C3%A6onian-deployed-green.svg)](https://github.com/acidjazz/aeonian)
 <a href="https://github.com/nuxt/nuxt.js/"><img src="https://img.shields.io/badge/nuxt.js-v2.12.2-800080.svg?style=flat-square" alt=""/></a>
+![Deploy](https://github.com/acidjazz/resume/workflows/Deploy/badge.svg)
 
 ## Build Setup
 
