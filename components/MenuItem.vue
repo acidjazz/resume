@@ -1,10 +1,11 @@
 <template lang="pug">
-.menu-item.flex.items-center
-  a.w-10.h-10.flex.items-center.justify-center.pl-0(v-if="is_link", :href="to")
+a.menu-item.flex.items-center(v-if="is_link", :href="to")
+  .w-10.h-10.flex.items-center.justify-center.pl-0
     i.mdi.mdi-18px(:class="`mdi-${icon}`")
-  .w-10.h-10.flex.items-center.justify-center(v-else, @click="to")
+  .mr-4.hidden.lg_block.print_block(v-if="label") {{ label }}
+.menu-item.flex.items-center(v-else, @click="to", title="Dark Mode")
+  .w-10.h-10.flex.items-center.justify-center.pl-0
     i.mdi.mdi-18px(:class="`mdi-${icon}`")
-  .mr-4.hidden.lg_block(v-if="label") {{ label }}
 </template>
 
 <script>

@@ -20,6 +20,9 @@ module.exports = {
       center: true,
     },
     extend: {
+      screens: {
+        print: {'raw': 'print'},
+      },
       width: {
         96: '24rem',
         128: '32rem',

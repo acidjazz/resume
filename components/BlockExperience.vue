@@ -1,6 +1,6 @@
 <template lang="pug">
-.mb-2
-  .flex.flex-col.lg_flex-row.justify-start.cursor-pointer(@click="details = !details")
+.mb-2.print_mb-0
+  .flex.flex-col.lg_flex-row.print_flex-row.justify-start.cursor-pointer(@click="details = !details")
     .flex.items-center
       a(:href="link", target="_new").text-lg.pl-0 {{ company }}
       .px-2 -
