@@ -1,5 +1,5 @@
 <template lang="pug">
-a.menu-item.flex.items-center(v-if="is_link", :href="to")
+a.menu-item.flex.items-center(v-if="is_link", :href="to", target="_blank")
   .w-10.h-10.flex.items-center.justify-center.pl-0
     i.mdi.mdi-18px(:class="`mdi-${icon}`")
   .mr-4.hidden.lg_block.print_block(v-if="label") {{ label }}

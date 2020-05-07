@@ -1,5 +1,5 @@
 <template lang="pug">
-.mb-2.print_mb-0
+.mb-2
   .flex.flex-col.lg_flex-row.print_flex-row.justify-start.cursor-pointer(@click="details = !details")
     .flex.items-center
       span {{ company }}
