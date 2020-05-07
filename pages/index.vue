@@ -99,7 +99,7 @@
         li Installed Cisco routers and Bay Networks Hubs to all of the high schools of the Santa Ana School District
         li Routing and testing cat5 and fiber optic cables from each classroom to the main router
 
-  a.mt-10.flex.flex-row.items-center.justify-end.print_hidden(href="https://github.com/acidjazz/resume", target="_new")
+  a.mt-10.pb-4.flex.flex-row.items-center.justify-end.print_hidden(href="https://github.com/acidjazz/resume", target="_new")
     i.mdi.mdi-code-braces.mr-1
     i.mdi.mdi-heart.text-red-400.mr-1
     i.mdi.mdi-vuejs.text-green-400.mr-1
