@@ -100,7 +100,7 @@
         li Routing and testing cat5 and fiber optic cables from each classroom to the main router
 
     .float-right.p-2.fixed.bottom-0.right-0.print_hidden
-      a.flex.flex-row.items-center(href="https://github.com/acidjazz/resume", target="_new")
+      a.flex.flex-row.items-center(href="https://github.com/acidjazz/resume", target="_blank")
         i.mdi.mdi-code-braces.mr-1
         i.mdi.mdi-heart.text-red-400.mr-1
         i.mdi.mdi-vuejs.text-green-400.mr-1
