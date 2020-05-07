@@ -7,19 +7,16 @@ a
   transition all 0.3s ease-in-out
 
 .light-mode
-  @apply bg-white text-gray-900
+  @apply bg-gray-100 text-gray-900
   a
     @apply text-black
 
 
 .dark-mode
-  @apply bg-gray-900 text-gray-200
-
-  a
-    @apply text-blue-300
+  @apply bg-gray-900 text-gray-100
 
 .menu-item
-  @apply tran-background rounded cursor-pointer mx-2
+  @apply rounded cursor-pointer mx-2 tran-background
 
 .dark-mode .menu-item
   @apply bg-gray-800
@@ -33,7 +30,7 @@ a
   a
     @apply text-gray-900
   &:hover
-    @apply bg-gray-600
+    @apply bg-gray-600 text-white
 
 .grayscale-hover img
   transition filter 0.3s ease-in-out
@@ -62,7 +59,7 @@ a
 
 .tech-block
   transition all 0.3s ease-in-out
-  @apply flex mr-4 mb-4 p-4 rounded
+  @apply flex mr-4 mb-4 rounded
   &:hover
     @apply shadow
 
@@ -74,7 +71,7 @@ a
     @apply bg-gray-200
 
 .tag
-  @apply mr-2 mb-2 py-1 px-4 rounded tran-background
+  @apply mr-4 mb-4 py-1 px-4 rounded tran-background
 
 .dark-mode .tag
   @apply bg-gray-800

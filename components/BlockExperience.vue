@@ -1,16 +1,16 @@
 <template lang="pug">
-.BlockExperience
-  .flex.flex-row.justify-start(@click="details = !details")
-    a(:href="link", target="_new").pl-0 {{ company }}
-    .flex.cursor-pointer
-      span.px-2 -
-      span.text-sm {{ title }}
-      span.px-2 -
-      span.text-gray-500.text-sm {{ location }}
-      span.px-2 -
-      i.mdi.mdi-calendar.pr-2
-      span.text-sm  {{ range }}
-      i.mdi.mdi-chevron-down.pl-2
+.mb-2
+  .flex.flex-col.lg_flex-row.justify-start.cursor-pointer(@click="details = !details")
+    .flex.items-center
+      a(:href="link", target="_new").text-lg.pl-0 {{ company }}
+      .px-2 -
+      .text-sm {{ title }}
+    .flex.items-center
+      .px-2.hidden.lg_block -
+      .text-gray-500.text-sm {{ location }}
+      i.mdi.mdi-calendar.px-2
+      .text-gray-500.text-sm  {{ range }}
+      i.mdi.pl-2(:class="chevron")
   slot(v-if="details")
 </template>
 
@@ -42,6 +42,11 @@ export default {
     return {
       details: false,
     }
+  },
+  computed: {
+    chevron () {
+      return this.details ? 'mdi-chevron-up' : 'mdi-chevron-down'
+    },
   },
 }
 </script>
