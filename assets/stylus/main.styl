@@ -2,8 +2,8 @@ html
   font-family Roboto
   margin 0
   padding 0
-a
-  @apply pl-1
+a.link
+  @apply ml-1 border-b border-dashed
 
 .light-mode, .dark-mode
   transition all 0.3s ease-in-out
@@ -11,10 +11,12 @@ a
 .light-mode
   @apply bg-gray-100 text-gray-900
   a
-    @apply text-black
+    @apply text-black border-gray-900
 
 .dark-mode
   @apply bg-gray-900 text-gray-100
+  a
+    @apply border-gray-100
 
 .menu-item
   @apply rounded cursor-pointer mx-2 tran-background

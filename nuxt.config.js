@@ -6,6 +6,9 @@ export default {
   */
   head: {
     title: 'Kevin Olson',
+    htmlAttrs: {
+      lang: 'en',
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -14,8 +17,9 @@ export default {
     link: [
       { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/light/favicon-32x32.png' },
       { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/light/favicon-16x16.png' },
+      { rel: 'preload', href: '/fonts/materialdesignicons-webfont.eot?v-5.1.45', as: 'font' },
       { rel: 'stylesheet', href: '/mdi.css' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap',},
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap' },
     ]
   },
   /*

@@ -18,12 +18,12 @@
 
   PageSection(title="Technology I Love")
     .flex.flex-wrap
-      BlockTechnology(src="laravel.svg", to="https://laravel.com")
-      BlockTechnology(src="vuejs.png", to="https://vuejs.org")
-      BlockTechnology(src="aws.png", to="https://aws.amazon.com")
-      BlockTechnology(src="nuxtjs.svg", to="https://nuxtjs.org")
-      BlockTechnology(src="tailwind.png", to="https://tailwindcss.com")
-      BlockTechnology(src="lottie.png", to="https://airbnb.design/lottie/")
+      BlockTechnology(alt="Laravel", src="laravel.svg", to="https://laravel.com")
+      BlockTechnology(alt="VueJS", src="vuejs.png", to="https://vuejs.org")
+      BlockTechnology(alt="AWS", src="aws.png", to="https://aws.amazon.com")
+      BlockTechnology(alt="NuxtJS", src="nuxtjs.svg", to="https://nuxtjs.org")
+      BlockTechnology(alt="TailWind CSS", src="tailwind.png", to="https://tailwindcss.com")
+      BlockTechnology(alt="Lottie", src="lottie.png", to="https://airbnb.design/lottie/")
     .flex.flex-wrap
       .tag.py-1.px-2.mr-4.mb-4.print_px-1.print_mr-1.print_mb-1(v-for="skill in skills_array") {{ skill }}
 
@@ -31,16 +31,16 @@
     BlockExperience(company="256 llc", title="Software Engineer", range="Sept 2014 - Now", location="Austin, TX", link="https://256.io")
       ul.list-disc.m-4.ml-8
         li
-          a(href="https://weareapartments.org/", target="_new") We Are Apartments
+          a.link(href="https://weareapartments.org/", target="_new") We Are Apartments
           span.pl-1 -
-          a(href="https://github.com/acidjazz/waa", target="_new") code
+          a.link(href="https://github.com/acidjazz/waa", target="_new") code
         li
-          a(href="https://oneconcern.com/", target="_new") One Concern
+          a.link(href="https://oneconcern.com/", target="_new") One Concern
           span.pl-1 -
-          a(href="https://github.com/acidjazz/waa", target="_new") code
+          a.link(href="https://github.com/acidjazz/waa", target="_new") code
         li
           span.pl-1 Visit the portfolio site for more projects with source code at
-          a(href="https://256.io/", target="_new") 256.io
+          a.link(href="https://256.io/", target="_new") 256.io
 
     BlockExperience(company="Rosetta (Publicis)", title="Software Engineer", range="Sept 2013 - Sept 2014", location="San Francisco, CA", link="https://www.publicissapient.com/")
       ul.list-disc.m-4.ml-8.my-4

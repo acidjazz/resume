@@ -1,5 +1,5 @@
 <template lang="pug">
-.mb-2
+.mb-4
   .flex.flex-col.lg_flex-row.print_flex-row.justify-start.cursor-pointer(@click="details = !details")
     .flex.items-center
       span {{ company }}
@@ -7,9 +7,9 @@
       .text-sm {{ title }}
     .flex.items-center
       .px-2.hidden.lg_block -
-      .text-gray-500.text-sm {{ location }}
+      .text-sm {{ location }}
       i.mdi.mdi-calendar.px-2
-      .text-gray-500.text-sm  {{ range }}
+      .text-sm  {{ range }}
       a(:href="link", target="_blank")
         i.mdi.pl-2.mdi-link
       i.mdi.pl-2(:class="chevron")
