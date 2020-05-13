@@ -13,7 +13,6 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "mdi": "cp node_modules/@mdi/font/css/materialdesignicons.min.css static/mdi.css; cp node_modules/@mdi/font/fonts/* static/fonts/.; cp node_modules/@mdi/font/css/materialdesignicons.css.map static/.;",
     "production": "node aeonian.js production"
-
   },
   "dependencies": {
     "@mdi/font": "^5.0",
