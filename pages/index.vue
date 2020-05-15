@@ -116,7 +116,7 @@ export default {
   components: { MenuItem, BlockExperience, PageSection, BlockTechnology },
   data () {
     return {
-      skills: 'php javascript nodejs python git git-flow github github-actions laravel vapor passport socialite ux vuejs nuxtjs aws ec2 s3 lambda phpunit jest css3 sass stylus pugjs pwa twa docker vagrant jsonapi'
+      skills: 'php javascript nodejs python git git-flow github github-actions laravel vapor passport socialite ux vuejs nuxtjs aws ec2 s3 lambda phpunit jest css3 sass stylus pugjs pwa twa docker vagrant jsonapi vim jetbrains jira'
     }
   },
   computed: {
