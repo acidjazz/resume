@@ -13,7 +13,7 @@ main.container.md.px-4.pb-6
       MenuItem(icon="file-pdf", to="/kevin-olson-resume.pdf").print_hidden
   .text-2xl Kevin Olson
   PageSection(title="Profile")
-    .text-lg Full stack and DevOps engineer
+    .text-lg Full stack and DevOps engineering manager
 
   PageSection(title="Technology I Love")
     .flex.flex-wrap
